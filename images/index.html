@@ -37,6 +37,50 @@
           </tbody></table>
           
 
+    <tr onmouseout="nb_stop()" onmouseover="nb_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nb_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/pvsg.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/nb.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function nb_start() {
+            document.getElementById('nb_image').style.opacity = "1";
+          }
+
+          function nb_stop() {
+            document.getElementById('nb_image').style.opacity = "0";
+          }
+          nb_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://linzhiqiu.github.io/papers/naturalbench/">
+          <span class="papertitle">NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples</span>
+        </a>
+        <br>
+        <a href="https://linzhiqiu.github.io/papers/naturalbench/">Baiqi Li*</a>, 
+        <a href="https://linzhiqiu.github.io/">Zhiqiu Lin*</a>, 
+        <strong>Wenxuan Peng*</strong>, 
+        <a href="https://nyandwi.com/">Jean de Dieu Nyandwi*</a>, 
+        <a href="https://zixianma.github.io/">Zixian Ma</a>, 
+        <a href="https://linzhiqiu.github.io/papers/naturalbench/">Simran Khanuja</a>, 
+        <a href="https://ranjaykrishna.com/index.html">Ranjay Krishna&</a>, 
+        <a href="https://phontron.com/">Graham Neubig&</a>, 
+        <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan&</a>
+        <br>
+        <em>NeurIPS D&B</em>, 2024
+        <br>
+        <a href="https://linzhiqiu.github.io/papers/naturalbench/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2410.14669">paper</a>
+        <p></p>
+      </td>
+    </tr>
+
     <tr onmouseout="pvsg_stop()" onmouseover="pvsg_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
