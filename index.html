@@ -1,64 +1,78 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="google-site-verification" content="pa8decvgZVeFgaZ2JP1hFbphRCBorF1lKWTtpSGo0mM" />
+<head>
+  <meta charset="UTF-8">
+  <title>Wenxuan Peng</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
 
-    <title>Wenxuan Peng</title>
+<!-- Outer table for the whole page -->
+<table style="width:100%; max-width:800px; margin:auto; border-spacing:0;">
+  <tbody>
 
-    <meta name="author" content="Wenxuan Peng">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/butterfly.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
-
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Wenxuan Peng
-                </p>
+    <!-- First row: name & photo -->
+    <tr>
+      <td style="padding:0;">
+        <!-- Nested table for name/intro on the left, photo on the right -->
+        <table style="width:100%; border-spacing:0;">
+          <tbody>
+            <tr>
+              <td style="padding:2.5%; width:60%; vertical-align:middle">
+                <p class="name" style="text-align:center;">Wenxuan Peng</p>
                 <p>
-                  I am a first-year CS PhD student at <a href="https://www.cs.cornell.edu/">Cornell University</a>, supervised by <a href="https://www.cs.cornell.edu/~bharathh/">Prof. Bharath Hariharan</a>, I am also collaborating with <a href="https://www.hadarelor.com/">Prof. Hadar Averbuch-Elor</a>. Before that, I obtained my Bachelor’s degree in Computer Science from<a href="https://www.ntu.edu.sg/">Nanyang Technological University</a> in Singapore. During my time at NTU, I've had the opportunity to dive into research at <a href="https://www.mmlab-ntu.com/">MMLab@NTU</a>, guided by Prof. <a href="https://liuziwei7.github.io/">Ziwei Liu</a>. I also spent a summer as a research intern in <a href="http://www.cs.cmu.edu/~jeanoh/big/">roBot Intelligence Group</a> at <a href="https://www.cmu.edu/"></a>Carnegie Mellon University</a>, mentored by Prof. <a href="https://www.cs.cmu.edu/~./jeanoh/"></a>Jean Oh</a>. I also work with Prof. <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a> on assessing the robustness of vision-language foundation models. My research interest focuses on developing highly controllable and compositional generative models that empower creative and interactive content creation and manipulation. Additionally, I’m also interested in multi-modalities research and advancements in vision-language models and visual reasoning tasks.
+                  I am a first-year CS PhD student at 
+                  <a href="https://www.cs.cornell.edu/">Cornell University</a>, 
+                  supervised by <a href="https://www.cs.cornell.edu/~bharathh/">Prof. Bharath Hariharan</a>. 
+                  I am also collaborating with 
+                  <a href="https://www.hadarelor.com/">Prof. Hadar Averbuch-Elor</a>.
+                  Before that, I obtained my Bachelor’s degree in Computer Science from
+                  <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a> in Singapore.
+                  ...
+                  I also spent a summer as a research intern in 
+                  <a href="http://www.cs.cmu.edu/~jeanoh/big/">roBot Intelligence Group</a> 
+                  at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, 
+                  mentored by <a href="https://www.cs.cmu.edu/~jeanoh/">Prof. Jean Oh</a>.
+                  ...
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:C200218@e.ntu.edu.sg">Email</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/LilyDaytoy">Github</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/wenxuan-peng-4858a5220/">Linkedin</a> 
+                  <a href="mailto:C200218@e.ntu.edu.sg">Email</a> / 
+                  <a href="https://github.com/LilyDaytoy">Github</a> / 
+                  <a href="https://www.linkedin.com/in/wenxuan-peng-4858a5220/">LinkedIn</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/wenxuanp.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/wenxuanp_circle.jpg" class="hoverZoomLink"></a>
+              <td style="padding:2.5%; width:40%; vertical-align:middle">
+                <img src="images/wenxuanp_circle.jpg" alt="profile photo" style="width:100%; max-width:200px;">
               </td>
             </tr>
-          </tbody></table>
-    
-    <tr onmouseout="nb_stop()" onmouseover="nb_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+          </tbody>
+        </table>
+      </td>
+    </tr> <!-- Make sure you close off the first row -->
+
+    <!-- Next row(s): publications, etc. -->
+    <tr onmouseover="nb_start()" onmouseout="nb_stop()">
+      <td style="padding:20px; vertical-align:middle;">
+        <!-- Example: left cell for video/thumbnail -->
         <div class="one">
-          <div class="two" id='nb_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/pvsg.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/nb.jpg' width="160">
+          <div class="two" id="nb_image" style="opacity:0;">
+            <video width="100%" muted autoplay loop>
+              <source src="images/pvsg.mp4" type="video/mp4">
+              Your browser does not support video.
+            </video>
+          </div>
+          <img src="images/nb.jpg" width="160">
         </div>
-        <script type="text/javascript">
+        <script>
           function nb_start() {
             document.getElementById('nb_image').style.opacity = "1";
           }
-
           function nb_stop() {
             document.getElementById('nb_image').style.opacity = "0";
           }
-          nb_stop()
         </script>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td style="padding:20px; vertical-align:middle;">
         <a href="https://linzhiqiu.github.io/papers/naturalbench/">
           <span class="papertitle">NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples</span>
         </a>
@@ -69,9 +83,9 @@
         <a href="https://nyandwi.com/">Jean de Dieu Nyandwi*</a>, 
         <a href="https://zixianma.github.io/">Zixian Ma</a>, 
         <a href="https://linzhiqiu.github.io/papers/naturalbench/">Simran Khanuja</a>, 
-        <a href="https://ranjaykrishna.com/index.html">Ranjay Krishna&</a>, 
-        <a href="https://phontron.com/">Graham Neubig&</a>, 
-        <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan&</a>
+        <a href="https://ranjaykrishna.com/index.html">Ranjay Krishna</a>, 
+        <a href="https://phontron.com/">Graham Neubig</a>, 
+        <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a>
         <br>
         <em>NeurIPS D&B</em>, 2024
         <br>
@@ -81,7 +95,8 @@
         <p></p>
       </td>
     </tr>
-            
+
+
     <tr onmouseout="pcsg_stop()" onmouseover="pcsg_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
