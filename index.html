@@ -9,7 +9,7 @@
 <body>
 
 <!-- Outer table for the whole page -->
-<table class="intro-table" style="width:100%; max-width:980px; margin:auto; border-spacing:0;">
+<table class="intro-table" style="width:100%; max-width:1160px; margin:auto; border-spacing:0;">
   <tbody>
 
     <!-- First row: name & photo -->
@@ -30,15 +30,15 @@
                   I've had the opportunity to dive into research at <a href="https://www.mmlab-ntu.com/">MMLab@NTU</a>, guided by Prof. <a href="https://liuziwei7.github.io/">Ziwei Liu</a>.
                   I was also fortunate to collaborate with <a href="https://www.cs.cmu.edu/~jeanoh/">Prof. Jean Oh</a> and Prof. <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a> as a research intern at <a href="https://www.cs.cmu.edu/">Carnegie Mellon University</a>.
                 </p>
-                <p style="text-align:center">
-                  <a href="https://scholar.google.com.au/citations?user=I_B6IHIAAAAJ&hl=en">Google Scholar</a> /
-                  <a href="mailto:wp267@cornell.edu">Email</a> / 
-                  <a href="https://github.com/LilyDaytoy">Github</a> / 
-                  <a href="https://www.linkedin.com/in/wenxuan-peng-4858a5220/">LinkedIn</a>
+                <p class="profile-links">
+                  <a class="link-chip" href="https://scholar.google.com.au/citations?user=I_B6IHIAAAAJ&hl=en"><span>GS</span>Google Scholar</a>
+                  <a class="link-chip" href="mailto:wp267@cornell.edu"><span>@</span>Email</a>
+                  <a class="link-chip" href="https://github.com/LilyDaytoy"><span>GH</span>GitHub</a>
+                  <a class="link-chip" href="https://www.linkedin.com/in/wenxuan-peng-4858a5220/"><span>in</span>LinkedIn</a>
                 </p>
               </td>
               <td style="padding:2.5%; width:40%; vertical-align:middle">
-                <img src="images/wenxuanp3_circle.png" alt="profile photo" style="width:100%; max-width:200px;">
+                <img class="profile-photo" src="images/wenxuanp3_circle.png" alt="profile photo" style="width:100%; max-width:220px;">
               </td>
             </tr>
           </tbody>
@@ -48,7 +48,7 @@
   </tbody>
 </table> 
 
-<table class="section-table research-table" style="width:100%; max-width:980px; margin:auto; border-spacing:0;"><tbody>
+<table class="section-table research-table" style="width:100%; max-width:1160px; margin:auto; border-spacing:0;"><tbody>
   <tr>
     <td>
       <h2>Research</h2>
@@ -61,7 +61,7 @@
 </tbody></table>
 
 
-<table class="publication-table" style="width:100%; max-width:980px; margin:auto; border-spacing:0;">
+<table class="publication-table" style="width:100%; max-width:1160px; margin:auto; border-spacing:0;">
   <tbody>
     <!-- Next row(s): publications, etc. -->
     <tr>
@@ -90,26 +90,11 @@
       </td>
     </tr>
 
-    <tr onmouseover="nb_start()" onmouseout="nb_stop()">
+    <tr>
       <td style="padding:20px; vertical-align:middle;">
-        <!-- Example: left cell for video/thumbnail -->
         <div class="one">
-          <div class="two" id="nb_image" style="opacity:0;">
-            <video width="100%" muted autoplay loop>
-              <source src="images/pvsg.mp4" type="video/mp4">
-              Your browser does not support video.
-            </video>
-          </div>
           <img style="max-width:100%; height:auto;" src="images/nb.jpg" width="180">
         </div>
-        <script>
-          function nb_start() {
-            document.getElementById('nb_image').style.opacity = "1";
-          }
-          function nb_stop() {
-            document.getElementById('nb_image').style.opacity = "0";
-          }
-        </script>
       </td>
       <td style="padding:20px; vertical-align:middle;">
         <a href="https://linzhiqiu.github.io/papers/naturalbench/">
@@ -139,28 +124,11 @@
     </tr>
 
 
-    <tr onmouseover="pcsg_start()" onmouseout="pcsg_stop()">
+    <tr>
       <td style="padding:20px; width:25%; vertical-align:middle;">
         <div class="one">
-          <!-- ID changed to "pcsg_image", and initial style="opacity:0;" so we can fade in on hover -->
-          <div class="two" id="pcsg_image" style="opacity:0;">
-            <video width="100%" height="100%" muted autoplay loop>
-              <source src="images/pvsg.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
           <img style="max-width:100%; height:auto;" src="images/pcsg1.png" width="180" alt="Personalized Comic Story Generation Thumbnail">
         </div>
-        <script type="text/javascript">
-          function pcsg_start() {
-            document.getElementById('pcsg_image').style.opacity = "1";
-          }
-          function pcsg_stop() {
-            document.getElementById('pcsg_image').style.opacity = "0";
-          }
-          // Initialize hidden
-          pcsg_stop();
-        </script>
       </td>
     
       <td style="padding:20px; width:75%; vertical-align:middle;">
@@ -180,25 +148,11 @@
     </tr>
     
 
-    <tr onmouseout="pvsg_stop()" onmouseover="pvsg_start()">
+    <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='pvsg_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/pvsg.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
           <img style="max-width:100%; height:auto;" src='images/pvsg3.png' width="180">
         </div>
-        <script type="text/javascript">
-          function pvsg_start() {
-            document.getElementById('pvsg_image').style.opacity = "1";
-          }
-
-          function pvsg_stop() {
-            document.getElementById('pvsg_image').style.opacity = "0";
-          }
-          pvsg_stop()
-        </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://jingkang50.github.io/PVSG/">
@@ -229,25 +183,11 @@
     </tr>
 
     
-      <tr onmouseout="psg4d_stop()" onmouseover="psg4d_start()">
+      <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='psg4d_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/psg4d.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
             <img style="max-width:100%; height:auto;" src='images/psg4d.png' width="180">
           </div>
-          <script type="text/javascript">
-            function psg4d_start() {
-              document.getElementById('psg4d_image').style.opacity = "1";
-            }
-
-            function psg4d_stop() {
-              document.getElementById('psg4d_image').style.opacity = "0";
-            }
-            psg4d_stop()
-          </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/pdf/2405.10305">
@@ -275,7 +215,7 @@
     </tbody></table>
 
       
-    <table class="section-table education-table" style="width:100%; max-width:980px; margin:auto; border-spacing:0;"><tbody>
+    <table class="section-table education-table" style="width:100%; max-width:1160px; margin:auto; border-spacing:0;"><tbody>
         <tr>
           <td>
             <h2>Education</h2>
@@ -310,7 +250,7 @@
         </tr>
       </tbody></table>
 
-      <table class="section-table experience-table" style="width:100%; max-width:980px; margin:auto; border-spacing:0;"><tbody>
+      <table class="section-table experience-table" style="width:100%; max-width:1160px; margin:auto; border-spacing:0;"><tbody>
         <tr>
           <td>
             <h2>Experiences</h2>
@@ -320,7 +260,7 @@
       <table width="100%" align="center" border="0" cellpadding="10"><tbody> -->
 
         <tr>
-          <td style="padding:5px;width:20%;vertical-align:middle"><img src="images/adobe_research.png" width="120"></td>
+          <td style="padding:5px;width:20%;vertical-align:middle"><img src="images/adobe_research.jpg" width="120"></td>
           <td width="75%" valign="middle">
             <strong><a href="https://research.adobe.com/">Adobe Research</a></strong>
             <br>
@@ -371,7 +311,7 @@
 
       </tbody></table>
 
-      <table class="section-table awards-table" style="width:100%; max-width:980px; margin:auto; border-spacing:0;"><tbody>
+      <table class="section-table awards-table" style="width:100%; max-width:1160px; margin:auto; border-spacing:0;"><tbody>
         <tr>
           <td>
             <h2>Selected Awards and Honors</h2>
