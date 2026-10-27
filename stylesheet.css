@@ -81,35 +81,35 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 1.42;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 1.2;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.25;
 }
 
 .name {
-  padding-top: 14px;
+  padding-top: 20px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .one {
@@ -148,40 +148,30 @@ body {
 }
 
 .intro-table {
-  margin-top: 28px !important;
-  margin-bottom: 18px !important;
-  padding: 28px 34px 26px;
-  background-color: #f5fbff;
-  background-image:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.74) 54%, rgba(255, 255, 255, 0.84) 100%),
-    url("images/intro_ocean_bg.jpg");
-  background-position: center 58%;
-  background-size: cover;
-  border: 1px solid #efe8f6;
-  border-radius: 22px;
-  box-shadow: 0 14px 38px rgba(63, 57, 92, 0.07);
-  overflow: hidden;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0;
 }
 
 .section-table {
-  margin-top: 56px !important;
+  margin-top: 42px !important;
 }
 
 .section-table > tbody > tr:first-child > td {
-  padding: 0 20px 12px !important;
+  padding: 0 16px 8px !important;
 }
 
 .research-table {
-  margin-top: 34px !important;
+  margin-top: 22px !important;
 }
 
 .research-table p {
-  margin: 14px 0 0;
+  margin: 10px 0 0;
 }
 
 .publication-table {
   display: block;
-  margin-top: 22px !important;
+  margin-top: 8px !important;
 }
 
 .publication-table > tbody {
@@ -190,10 +180,10 @@ body {
 
 .publication-table > tbody > tr {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  column-gap: 36px;
+  grid-template-columns: 160px minmax(0, 1fr);
+  column-gap: 24px;
   align-items: start;
-  margin: 0 20px 58px;
+  margin: 0 16px 34px;
 }
 
 .publication-table > tbody > tr > td {
@@ -211,13 +201,13 @@ body {
 
 .publication-table > tbody > tr > td:nth-child(2) {
   padding: 0 !important;
-  max-width: 620px;
+  max-width: 584px;
 }
 
 .publication-table .one,
 .publication-table .two {
-  width: 280px;
-  height: 205px;
+  width: 160px;
+  height: 160px;
 }
 
 .publication-table .one {
@@ -232,7 +222,7 @@ body {
   width: 100% !important;
   max-width: 100% !important;
   height: 100% !important;
-  max-height: 205px;
+  max-height: 160px;
   object-fit: contain;
   object-position: top center;
   display: block;
@@ -248,68 +238,35 @@ body {
 .profile-photo {
   display: block;
   margin: 0 auto;
-  padding: 7px;
-  background: rgba(255, 255, 255, 0.82);
   border-radius: 50%;
-  box-shadow: 0 14px 34px rgba(62, 54, 83, 0.13);
 }
 
 .profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin: 18px 0 0;
+  margin: 10px 0 0;
   text-align: center;
-}
-
-.link-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 6px 11px;
-  border: 1px solid #dce7f5;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  color: #1768c4;
-  font-size: 15px;
-  line-height: 1;
-}
-
-.link-chip span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 999px;
-  background: #edf4ff;
-  color: #155fb2;
-  font-size: 12px;
-  font-weight: 700;
 }
 
 .education-table > tbody > tr:not(:first-child) > td,
 .experience-table > tbody > tr:not(:first-child) > td {
-  padding: 16px 20px !important;
+  padding: 12px 16px !important;
   vertical-align: middle !important;
 }
 
 .education-table > tbody > tr:not(:first-child) > td:first-child,
 .experience-table > tbody > tr:not(:first-child) > td:first-child {
-  width: 220px !important;
+  width: 160px !important;
   text-align: center;
 }
 
 .education-table > tbody > tr:not(:first-child) > td:first-child img,
 .experience-table > tbody > tr:not(:first-child) > td:first-child img {
-  width: 160px !important;
-  max-height: 132px;
+  width: 120px !important;
+  max-height: 100px;
   object-fit: contain;
 }
 
 .awards-table td {
-  padding: 4px 20px 36px !important;
+  padding: 4px 16px 32px !important;
 }
 
 .awards-table ul {
@@ -318,7 +275,7 @@ body {
 }
 
 .awards-table li {
-  margin: 12px 0;
+  margin: 8px 0;
 }
 
 @media (max-width: 760px) {
@@ -329,34 +286,33 @@ body {
   p,
   a,
   strong {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   h2 {
-    font-size: 27px;
+    font-size: 22px;
   }
 
   .intro-table {
     margin-top: 0 !important;
-    border-radius: 0;
-    padding: 22px 10px 18px;
+    padding: 16px 10px 12px;
   }
 
   .name {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .publication-table > tbody > tr {
     display: block;
-    margin: 0 18px 56px;
+    margin: 0 16px 36px;
   }
 
   .publication-table .one,
   .publication-table .two {
     width: 100%;
-    max-width: 280px;
-    height: 205px;
-    margin: 0 auto 18px;
+    max-width: 200px;
+    height: 160px;
+    margin: 0 auto 14px;
   }
 
   .publication-table > tbody > tr > td:first-child {
