@@ -113,6 +113,12 @@ h2 {
   font-size: 15px;
 }
 
+.resource-pending {
+  color: #828282;
+  cursor: default;
+  text-decoration: none;
+}
+
 .name {
   padding-top: 20px;
   margin: 0;
