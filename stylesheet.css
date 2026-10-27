@@ -102,6 +102,17 @@ h2 {
   font-weight: 700;
 }
 
+/* Match Arianna Liu's more readable publication typography while keeping the
+   compact Jon Barron scale for the profile and research introduction. */
+.publication-table,
+.publication-table td,
+.publication-table p,
+.publication-table a,
+.publication-table strong,
+.publication-table .papertitle {
+  font-size: 15px;
+}
+
 .name {
   padding-top: 20px;
   margin: 0;
